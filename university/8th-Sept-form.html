@@ -1,7 +1,5 @@
-
 <!Doctype html>
 <html>
-
 <head>
 <title>Jehovah i thank you for the good things you have done.</title>
 <meta charset="utf-8">
@@ -12,8 +10,11 @@
 <style type="text/css">
     body{background-image: url(DSC_0584uniweb.jpg);
          background-repeat: no-repeat;
-     	 background-size: auto;}
-    fieldset{background-color: white;
+     	 background-size: cover;
+        }
+    fieldset{
+        background-color: #fff;
+        opacity: 0.9;
         }
     p{font-family: Arial, Helvetica, sans-serif;}
     button:hover:active {
@@ -23,13 +24,15 @@
       padding: 0px
     }
     fieldset {
-        width: 260px;
-        margin-top: 10px;
+        width: fit-content;
+        margin-top: 70px;
         border: 1px solid #d6d6d6;
         line-height: 1.6em;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px;}
+        padding: 20px;
+        border-radius: 15px;
+    }
     a#link {
     margin-bottom: 0px
     text-align: center;
@@ -41,51 +44,106 @@
     text-align: center;
     }
     a {
-    text-decoration: none;}
-
+    text-decoration: none;
+    color: white;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+    button {
+        display: block;
+        margin: auto;
+        width: 100px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: rgba(180, 3, 3, 0.8);
+        color: white;
+        border: none;
+    }
+    p {
+        text-align: center;
+        margin: 0;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    input {
+        width: 90%;
+        height: 26px;
+        border-radius: 4px;
+        border-width: 1px;
+    }
+    input:hover {
+        border: 2px solid cornflowerblue;
+    }
+    input:focus {
+        outline: 2px solid cornflowerblue;
+        border: none;
+    }
+    input#username {
+        margin-bottom: 15px;
+    }
+    input#password {
+        margin-bottom: 20px;
+    }
+    button#login {
+        margin-bottom: 20px;
+    }
+    button#signup {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    p#footer {
+        font-size: 10px;
+        font-style: italic;
+    }
+    
 </style>
 </head>
 
 <body>
 
-<fieldset>
+
 
 
 <form action="http://www.8thsept.com/register.php" method="post">
-
+<fieldset>
 
 <img src="University-of-london-logo-w.png" alt="The logo of University of London" title="The University of London" />
 
 <h2>LOGIN!</h2>
 
-<p>USERNAME:
-<br /> <input type="text" name="username" maxlength="64" required />
+<label for="username">USERNAME:</label>
+<br /> <input type="text" id='username' name="username" maxlength="64" required />
  
-<p>PASSWORD:
-<br /><input type="password" name="password" maxlength="64" required/>
+<br>
+<label for="password">PASSWORD:</label>
+<br /><input type="password" id="password" name="password" maxlength="64" required/>
+
 
 <br />
-<br />
-<button>LOGIN!</button>
+<button id="login">LOGIN!</button>
 
 
 <hr />
-<a href="forgottenpassword.html" id="link">Have you forgotten your password? </a>
+<p><a href="forgottenpassword.html" id="link">Have you forgotten your password? </a></p>
 <h4> OR </h4>
+<p>Tap the signup button to create an account.</p>
 
-Tap the signup button to create an account.
-<br />
 
-<button><a href="FORM10.html">SIGNUP</a></button>
+<button id="signup"><a href="FORM10.html">SIGNUP</a></button>
 
 
 <i>
-<p>&copy UNIVERSITY OF LONDON</p>
+<p id="footer">&copy UNIVERSITY OF LONDON</p>
 </i>
  
- 
+</fieldset> 
  </form>
- </fieldset>
+
  
  </body>
  

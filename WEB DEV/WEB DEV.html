@@ -12,7 +12,7 @@
 		}
 		div.jumbotron {
 			background-color: orange;
-			width: 100vw;
+			width: 100%;
 			height: 100vh;
 			padding-top: 25px;
 			padding: 25px 25px;
@@ -35,11 +35,13 @@
 			color: black;
 			font-size: 25px;
 			font-weight: bold;
-			vertical-align: middle;
 			padding: 0px;
 			display: inline;
-			position: relative;
-			bottom: 12.5px;
+			
+		}
+		
+		header section img {
+			vertical-align: middle;
 		}
 		h1 {
 			width: 100%;
@@ -50,6 +52,7 @@
 			line-height: 0.5;
 			top: 25vh;
 			text-shadow: 3px 3px #ffffff;
+			font-family: Arial, Helvetica, sans-serif;
 		}
 		.menu {
 			float: right;
@@ -124,6 +127,7 @@
 			position: relative;
 			top: 25vh;
 			text-shadow: 3px 3px #ffffff;
+			font-family: Arial, Helvetica, sans-serif;
 		}
 		div.price-tag {
 			width: 130px;
@@ -177,7 +181,68 @@
 			border: 1px solid black;
 			float: left;
 		}
-		div
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+			color: brown;
+		}
+		div#pic {
+			width: 90%;
+			margin: auto;
+			height: 400px;
+			position: relative;
+			margin-top: 50px;
+		}
+		div.leftua,div.right {
+			float: left;
+		}
+		div.leftua {
+			width: 48%;
+			background-image: url("https://media.istockphoto.com/id/991494722/photo/hamburger-with-a-meatball-and-vegetables.jpg?s=612x612&w=0&k=20&c=BmHob4iZOCuk2Qrr4zllLawHR498Wkvyzcy3rzJx47A=");
+			background-size: cover;
+			border-radius: 15px;
+			height: 400px;
+		}
+		div.leftua p {
+			color: white;
+			text-transform: uppercase;
+			font-family: Arial, Helvetica, sans-serif;
+			margin-left: 25px;
+			
+		}
+		div.leftua p.sub {
+			font-size: 15px;
+			margin-top: 25px;
+			margin-bottom: 5px;
+		}
+		div.leftua p.main {
+			font-size: 20px;
+			margin-top: 0px;
+		}
+		div.right {
+			width: 48%;
+			position: absolute;
+			right: 0;
+			border: none;
+			height: 400px;
+		}
+		div.right_top {
+			background-image: url("https://media.istockphoto.com/id/1314402997/photo/delicious-hamburger-on-wooden-table-spices-and-brown-fabric.jpg?s=612x612&w=0&k=20&c=juu38KGuGXgl2bRFcu3i5r8hGiJA2jqqv-3GDpxE0gs=");
+			background-size: cover;
+			background-position: middle;
+			height: 47%;
+			border-radius: 7.5px;
+		}
+		div.right_bottom {
+			background-image: url("https://media.istockphoto.com/id/525975462/photo/chicken-burger-cold-beer.jpg?s=612x612&w=0&k=20&c=xe7EgEDDSWYpsCGmU8_KBrfLgYWwAcoTyHRKD9osAhQ=");
+			background-size: cover;
+			height: 47%;
+			border-radius: 7.5px;
+			position: relative;
+			top: 30px;
+		}
 	</style>
 </head>
 <body>
@@ -185,16 +250,16 @@
 		<header>
 			
 			<div>
-				<img src="images/burger-icon.png">
-				<section class="brand">BURGER HOUSE</section>
+				<section class="brand"><img src="images/burger-icon.png">
+				BURGER HOUSE</section>
 				<section class="menu"><section id="full-right"><i class="fa-solid fa-van-shuttle"></i>
 					<span> Express Delivery <a href="tel:09039911512">+2349039911512</a></span></section>
 				<br>
 				<ul>
-					<li>HOME</li>
-					<li>MENU</li>
-					<li>OUR STORY</li>
-					<li class="no-margin">CONTACT US</li>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">MENU</a></li>
+					<li><a href="#">OUR STORY</a></li>
+					<li class="no-margin"><a href="#">CONTACT US</a></li>
 				</ul>
 				</section>
 				</div>
@@ -222,14 +287,22 @@
 		</div>
 	</div>
 
-	<div>
+	<div id="pic">
+		<div class="leftua">
+			<p class="sub">TRY IT TODAY.</p>
+			<p class="main">MOST POPULAR BURGER.</p>
+		</div>
 		<div class="right">
+			<div class="right_top"></div>
+			<div class="right_bottom"></div>
+		</div>
+		<!-- <div class="right">
 			<img src="https://media.istockphoto.com/id/991494722/photo/hamburger-with-a-meatball-and-vegetables.jpg?s=612x612&w=0&k=20&c=BmHob4iZOCuk2Qrr4zllLawHR498Wkvyzcy3rzJx47A=" width="100%" height="500px" alt="harmburger-image">
 		</div>
 		<div class="right">
 			<div style="width: 100%; height: 250px;"> <img src="https://media.istockphoto.com/id/1314402997/photo/delicious-hamburger-on-wooden-table-spices-and-brown-fabric.jpg?s=612x612&w=0&k=20&c=juu38KGuGXgl2bRFcu3i5r8hGiJA2jqqv-3GDpxE0gs=" width="100%" height="250px" alt="harmburger"></div>
 			<div style="margin: 0px 0px 0px 0px;"> <img src="https://media.istockphoto.com/id/525975462/photo/chicken-burger-cold-beer.jpg?s=612x612&w=0&k=20&c=xe7EgEDDSWYpsCGmU8_KBrfLgYWwAcoTyHRKD9osAhQ=" width="100%" height="250px" alt="harmburger"></div>
-		</div>
+		</div> -->
 	</div>
 </body>
 </html>
