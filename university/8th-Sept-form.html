@@ -8,11 +8,17 @@
 
 
 <style type="text/css">
-    body{background-image: url(DSC_0584uniweb.jpg);
+    html{background-image: url(DSC_0584uniweb.jpg);
          background-repeat: no-repeat;
      	 background-size: cover;
+         background-attachment: fixed;
          background-position: center;
         }
+    div.form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     fieldset{
         background-color: #fff;
         opacity: 0.9;
@@ -21,12 +27,12 @@
     button:hover:active {
       background-color: brown; 
       color: cornflowerblue;
-      margin-top: 0px
-      padding: 0px
+      margin-top: 0px;
+      padding: 0px;
     }
     fieldset {
         width: fit-content;
-        margin-top: 30px;
+        margin-top: 40px;
         border: 1px solid #d6d6d6;
         line-height: 1.6em;
         margin-left: auto;
@@ -35,7 +41,7 @@
         border-radius: 15px;
     }
     a#link {
-    margin-bottom: 0px
+    margin-bottom: 0px;
     text-align: center;
     text-decoration: none;
     color: green;}
@@ -111,7 +117,7 @@
 
 
 
-
+<div class="form">
 <form action="http://www.8thsept.com/register.php" method="post">
 <fieldset>
 
@@ -146,7 +152,7 @@
  
 </fieldset> 
  </form>
-
+</div>
  
  </body>
  
