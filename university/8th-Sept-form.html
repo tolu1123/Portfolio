@@ -5,14 +5,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
 
 <style type="text/css">
     html{background-image: url(DSC_0584uniweb.jpg);
          background-repeat: no-repeat;
      	 background-size: cover;
-         background-attachment: fixed;
+         height: 100%;
+          /* backround-attachment: fixed; */
          background-position: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+
         }
     div.form {
         display: flex;
@@ -21,7 +32,7 @@
     }
     fieldset{
         background-color: #fff;
-        opacity: 0.9;
+        opacity: 0.8;
         }
     p{font-family: Arial, Helvetica, sans-serif;}
     button:hover:active {
@@ -62,8 +73,8 @@
         display: block;
         margin: auto;
         width: 100px;
-        height: 20px;
-        border-radius: 10px;
+        height: 40px;
+        border-radius: 5px;
         background-color: rgba(180, 3, 3, 0.8);
         color: white;
         border: none;
@@ -109,7 +120,28 @@
         font-size: 10px;
         font-style: italic;
     }
-    
+    a#link {
+        text-align: center;
+        text-decoration: underline;
+    }
+    label, p, h4 {
+        font-size: 0.8em;
+    }
+    p {
+        text-align: left;
+    }
+    h4 {
+        text-align: center;
+    }
+    div#space {
+        display: flex;
+        justify-content: ;
+    }
+    p#footer {
+        text-align: center;
+        position: relative;
+        top: 2.0em;
+    }
 </style>
 </head>
 
@@ -140,10 +172,10 @@
 <hr />
 <p><a href="forgottenpassword.html" id="link">Have you forgotten your password? </a></p>
 <h4> OR </h4>
-<p>Tap the signup button to create an account.</p>
+
+<div id="space"> <span>Don't have an account? &nbsp;</span> <span><a id="link" href="FORM10.html">Sign up</a> </span></div>
 
 
-<button id="signup"><a href="FORM10.html">SIGNUP</a></button>
 
 
 <i>
