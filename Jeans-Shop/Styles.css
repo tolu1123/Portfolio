@@ -126,22 +126,22 @@ div.footer p {
     }
     div.placeholder {
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 5%;
     }
     div.placeholder h1{
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: 900;
     }
     div.placeholder h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #fff;
     }
     div.shop {
         display: inline-block;
         background-color: #000;
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         font-weight: 700;
         padding: 10px;
     }
