@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 20px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+h1 {
+    color: white;
+    font-size: 1.2rem;
+}
+span.menu {
+    padding: 10px 0 0 0;
+}
+span.menu  i {
+    color: #fff;
+    font-size: 1.1rem;
+}
+h2 {
+    font-size: 1.2rem;
+    margin: 40px 0 40px 0;
+}
+select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1rem;
+    padding: 0;
+    margin: -3px;
+    font-family: 'Montserrat', sans-serif;
+}
+option {
+    background-color: #ddd;
+    border: none;
+    outline: none;
+    margin: 20px 0 20px 0;
+    width: 100px;
+}
+option:first-child {
+    display: none;
+}
+select:focus {
+    margin-bottom: 80px;
+    color: #000;
+    font-weight: 900;
+}
+select:hover {
+    font-weight: 900;
+}
+ul {
+    list-style-type: none;
+    margin: 30px 0 50px 0;
+    font-size: 1.1rem;
+}
+li {
+    margin: 20px 0 20px 0;
+}
+li:hover {
+    font-weight: 900;
+}
+
+/********** CREATING THE MENU ***********/
+.dropdown {
+    display: inline-block;
+    font-size: 30px;
+}
+.dropdown-content {
+    width: max(60vw, 280px);
+    height: 100vh;
+    background-color: #ddd;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+    overflow: auto;
+}
+.dropdown a {
+    color: white;
+}
+span.x {
+    position: absolute;
+    right: 0;
+    color: #000;
+    padding: 10px;
+}
+ div.footer {
+    position: absolute;
+    bottom: 0;
+}
+div.footer p {
+    font-size: 0.9rem;
+    margin: 10px 0 10px;
+}
+
+/************ THE MEDIA QUERIES *************/
+@media (max-width: 400px) {
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+    div.aside {
+        display: none;
+    }
+    div.main {
+        flex: 100%;
+        background-color: #fff;
+        padding: 20px 20px 0 20px;
+    }
+    div.placeholder {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+    div.placeholder h1{
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    div.placeholder h2 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    div.shop {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 10px;
+    }
+    div.showbox {
+        width: 100%;
+    }
+    div.futa {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    div.futa > div {
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+    div.futa div.contact button {
+        background-color: #000;
+        width: 60%; 
+    }
+}
+@media (min-width:401px) and (max-width:991px) {
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+    div.aside {
+        display: none;
+    }
+    div.main {
+        flex: 100%;
+        background-color: #fff;
+        padding: 20px 20px 0 20px;
+    }
+    div.placeholder {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+    div.placeholder h1{
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    div.placeholder h2 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    div.shop {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 10px;
+    }
+    div.showbox {
+        width: calc(50% - 20px);
+    }
+    div.futa {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    div.futa > div {
+        width: calc(50% - 20px);
+        margin: 20px 0 20px 0;
+    }
+    div.futa div.contact button {
+        background-color: #000;
+        width: 50%; 
+    }
+}
+
+
+@media (min-width:992px) {
+    header {
+        display: none;
+    }
+    div.container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    div.aside {
+        flex: 20%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        background-color: #eee;
+        color: #000;
+        padding: 20px;
+        overflow: auto;
+    }
+    div.main {
+        flex: 80%;
+        background-color: #fff;
+        padding: 20px 20px 0 20px;
+    }
+    div.placeholder {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    div.placeholder h1{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    div.placeholder h2 {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    div.shop {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 10px;
+    }
+    div.showbox {
+        width: calc(25% - 20px);
+    }
+    div.futa {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    div.futa > div {
+        width: calc(50% - 20px);
+        margin: 20px 0 20px 0;
+    }
+    div.futa div.contact button {
+        background-color: #000;
+        width: 50%; 
+    }
+}
+
+div.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+div.header h2 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+div.header i {
+    margin: 5px 15px 0 15px;
+}
+div.jumbotron {
+    position: relative;
+}
+div.jumbotron img {
+    width: 100%;
+    height: auto;
+}
+div.shop:hover {
+    color: #000;
+    background-color: #ddd;
+}
+div.header ~ div {
+    margin-bottom: 10px;
+}
+div.item {
+    padding: 30px 0 0 0;
+}
+div.item > h4 {
+    margin: 15px 0;
+}
+div.itemholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+div.showbox {
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #666;
+}
+div.showbox img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+div.tag {
+    margin: 15px 0;
+    text-align: center;
+    padding: 10px;
+}
+h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+h5 {
+    font-weight: 900;
+    font-size: 0.95rem;
+}
+h5.col {
+    color: rgb(252, 160, 69);
+}
+span.hangup {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    position: absolute;
+}
+div.buynow {
+    position: relative;
+}
+div.button {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    transition: left 0.5s linear ;
+}
+div.buynow:hover div.button {
+    left: 0;
+}
+span.click {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    font-size: 0.8rem;
+    padding: 5px 2px;
+    color: #fff;
+}
+span.click:hover {
+    background-color: #ddd;
+    color: #000;
+}
+div.subscribe {
+    background-color: #000;
+    padding: 40px 20px;
+    margin: 0 -20px !important;
+}
+div.subscribe h1 {
+    font-size: 2rem;
+}
+div.subscribe p {
+    color: #fff;
+    font-size: 1rem;
+}
+div.subscribe input:focus {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+    border-radius: 2px 2px 2px 2px;
+    border: none;
+}
+input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    margin: 10px 0;
+    padding: 15px 5px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+button {
+    padding: 12px;
+    background-color: red;
+    color: #fff;
+    font-size: 0.8rem;
+    outline: none;
+    border: none;
+}
+div.subscribe button:hover {
+    background-color: #ddd;
+    color: #000;
+}
+div.futa {
+    display: flex;
+    background-color: #eee;
+    margin: 0 -20px !important;
+    padding: 20px;
+
+}
+div.futa h2 {
+    margin: 20px 0;
+}
+div.futa p {
+    font-size: 0.8rem;
+    margin: 0px 0;
+}
+div.futa div {
+    background-color: inherit;
+    /* height: 600px; */
+}
+div.futa div.contact , div.about {
+    text-align: center;
+}
+div.futa div.contact input {
+    display: block;
+    margin: 20px 0;
+}
+div.futa div.contact button {
+    background-color: #000;
+}
+div.futa div.contact button:hover {
+    background-color: #fff;
+    color: #000;
+}
+div.futa div.about p {
+    text-decoration: underline;
+    margin: 15px 0;
+}
+div.futa div.store > i, div.futa div.accept > i{
+    font-size: 0.8rem;
+    color: #000;
+    margin: 0 10px 0 0;
+}
+div.futa div.store p, div.accept p {
+    margin: 15px 0;
+}
+div.socialmedia {
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+div.socialmedia i {
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
