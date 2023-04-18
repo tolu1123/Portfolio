@@ -102,8 +102,7 @@ span.x {
     padding: 10px;
 }
  div.footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: 50px;
 }
 div.footer p {
     font-size: 0.9rem;
@@ -380,6 +379,7 @@ span.click {
     font-size: 0.8rem;
     padding: 5px 2px;
     color: #fff;
+    text-align: center;
 }
 span.click:hover {
     background-color: #ddd;
