@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://kit.fontawesome.com/3d391fd37c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Lobster&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <header>
+                <div> <img src="Images/burger-icon.png" alt="Burger House Logo"> <h1>BURGER HOUSE</h1> </div>
+                <nav>
+                    <div class="contact">
+                        <i class="fa-solid fa-motorcycle"></i>&nbsp;
+                        Express Delivery &nbsp;<a href="tel:09039911512">+234 903 991 512</a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>HOME</li>
+                            <li>MENU</li>
+                            <li>OUR STORY</li>
+                            <li>CONTACT US</li>
+                        </ul>
+                        <span class="dropdown">
+                            <a href="#" onclick="myOpen()"><i class="fa-solid fa-bars"></i></a> 
+                            <div class="dropdown-content" id="open">
+                                <span onclick="myClose()"><i class="fa-solid fa-xmark"></i></span>
+                                <div class="delivery">
+                                    <i class="fa-solid fa-motorcycle"></i>&nbsp;
+                                    Express Delivery &nbsp;<a href="tel:09039911512">+234 903 991 512</a>
+                                </div>
+                                <ol class="list">
+                                    <li>HOME</li>
+                                    <li>MENU</li>
+                                    <li>OUR STORY</li>
+                                    <li>CONTACT US</li>
+                                </ol>
+                            </div>
+                        </span>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="mainjumbo">
+                <div class="textholder">
+                    <div class="holdar">
+                    <div class="dashed">
+                        IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS
+                    </div>
+                    <div class="namer">
+                        <h1>
+                            BURGER
+                        </h1>
+                        <h2>WEEK</h2>
+                    </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <picture>
+                        <source srcset="Images/img-small.png" media="(max-width: 767px)">
+                        <source srcset="Images/img-big.png" media="(min-width: 768px)">
+                        <img src="" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="imageholder">
+            <div class="allcases">
+                <img src="Images/img-1-one.jpg" alt="A picture of an Hamburger">
+                <div class="text-1">
+                    <h5>TRY IT TODAY</h5>
+                    <h3>MOST POPULAR BURGER</h3>
+                </div>
+            </div>
+            <div class="somecases">
+                <div class="img-one">
+                    <img src="Images/img-2-two.jpg" alt="A picture of an Hamburger">
+                    <div class="text-2">
+                        <h5>TRY IT TODAY</h5>
+                        <h3>MORE FUN</h3>
+                        <h3>MORE TASTE</h3>
+                    </div>
+                </div>
+                <div class="img-two">
+                    <img src="Images/img-3-three.jpg" alt="A picture of an Hamburger">
+                    <div class="text-3">
+                        <h5>TRY IT TODAY</h5>
+                        <h3>FRESH AND CHILLI</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="choose-enjoy">
+            <div class="title">
+                <a href="#">ALWAYS TASTY BURGER</a>
+                <h2>CHOOSE & ENJOY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore magna al qua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+            </div>
+            <div class="pricetag">
+                <div class="ham1">
+                    <div>
+                    <img src="Images/HAM-1.png" alt="">
+                    </div>
+                    <div class="holder">
+                        <h3>LOREM IPSUM DOLOR</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                        <a href="#" class="btn">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="ham2">
+                    <div>
+                    <img src="Images/HAM-1.png" alt="">
+                    </div>
+                    <div class="holder">
+                        <h3>LOREM IPSUM DOLOR</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                        <a href="#" class="btn">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="ham3">
+                    <div>
+                    <img src="Images/HAM-1.png" alt="">
+                    </div>
+                    <div class="holder">
+                        <h3>LOREM IPSUM DOLOR</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                        <a href="#" class="btn">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="upcoming">
+                <div class="bodytext">
+                    <div>
+                    <h2>DISCOVER</h2>
+                    <h1>UPCOMING EVENTS</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore magna al qua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    </div>
+                </div>
+                <div class="bodyimage">
+                    <img src="Images/bodyimage.jpg" alt="">
+                </div>
+            </div>
+            <div class="reservation">
+                <img src="Images/reservation_burger.png" alt="" class="burger">
+                <img src="Images/reservation_plate.png" alt="" class="plate">
+                <div>
+                <h2>RESERVATION</h2>
+                <h1>BOOK YOUR TABLE</h1>
+                <form action="/action.php" method="post" autocomplete="off">
+                    <input type="text" placeholder="NAME" name="name">
+                    <input type="date" placeholder="DATE" name="DATE">
+                    <input type="number" placeholder="PEOPLE" name="people" min="1" max="7" d="">
+                    <input type="email" placeholder="E-MAIL" name="email">
+                    <input type="time" placeholder="TIME" name="time">
+                    <input type="submit" value="FIND A TABLE">
+                </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <section>
+            <header>
+                <img src="Images/icona.png" alt="">
+                <h1>BURGER HOUSE</h1>
+            </header>
+            <p>
+                At our restaurant, we're dedicated to crafting the perfect burger experience. From the juiciness of our patties to the freshness of our ingredients, we put passion into every bite. Come in and taste the difference for yourself! Our friendly staff is always ready to welcome you with a smile.
+            </p>
+        </section>
+        <section>
+            <div>
+            <p><i class="fa-solid fa-location-dot"></i>&nbsp;NO.112, Idunnu Avenue, Alakuta, Awotan, Apete, Ibadan.</p>
+            <p><i class="fa-solid fa-envelope"></i>hydrazine1123@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>&nbsp;+234 903 991 1512</p>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+    <script>
+    function myOpen() {
+        document.getElementById("open").style.display="block";
+    }
+    function myClose() {
+        document.getElementById("open").style.display="none";
+    }
+    </script> 
+</body>
+</html
